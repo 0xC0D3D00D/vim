@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go' " Golang integration
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Autocomplete
+Plug 'Shougo/neoinclude.vim'
 Plug 'zchee/deoplete-go', { 'do': 'make'} " Autocomplete for go
 Plug 'majutsushi/tagbar' " Tagbar
 Plug 'airblade/vim-gitgutter' " Git diff
@@ -14,6 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary' " Comment/Uncomment lines
 Plug 'terryma/vim-multiple-cursors' " Multiple cursors like sublime
+Plug 'tpope/vim-fugitive' " Fugitive (git)
 call plug#end()
 
 " vim-go
