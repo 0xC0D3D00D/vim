@@ -8,5 +8,6 @@ return {
   { import = "astrocommunity.colorscheme.dracula-nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.motion.hop-nvim" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.fuzzy-finder.fzf-lua" },
+  { import = "astrocommunity.editing-support.copilotchat-nvim" },
 }
