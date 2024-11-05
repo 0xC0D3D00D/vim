@@ -1,0 +1,1 @@
+# Mamad's vim config
