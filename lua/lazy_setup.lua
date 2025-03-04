@@ -30,3 +30,5 @@ require("lazy").setup({
     },
   },
 } --[[@as LazyConfig]])
+
+vim.g.editorconfig = false

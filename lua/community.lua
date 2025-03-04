@@ -6,7 +6,8 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.colorscheme.dracula-nvim" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.completion.avante-nvim" },
+--  { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.fuzzy-finder.fzf-lua" },
