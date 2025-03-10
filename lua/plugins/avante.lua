@@ -51,12 +51,42 @@ return {
         {
           "yetone/avante.nvim",
           opts = {
-            provider = "copilot",
-            copilot = {
-              model = "claude-3.7-sonnet"
---              model = "gemini-2.0-flash-001"
+            provider = "claude-sonnet-3.7",
+            vendors = {
+              ["claude-sonnet-3.7"] = { 
+                __inherited_from = "openai",
+                api_key_name = "OPENROUTER_API_KEY",
+                endpoint = "https://openrouter.ai/api/v1",
+                model = "anthropic/claude-3.7-sonnet",
+                max_tokens = 131072,
+                disable_tools = true,
+              },
+              ["gemini-2.0-flash"] = {
+                __inherited_from = "openai",
+                api_key_name = "OPENROUTER_API_KEY",
+                endpoint = "https://openrouter.ai/api/v1",
+                model = "google/gemini-2.0-flash-001",
+                max_tokens = 8192,
+                disable_tools = true,
+              },
+              ["gpt-4.5-preview"] = {
+                __inherited_from = "openai",
+                api_key_name = "OPENROUTER_API_KEY",
+                endpoint = "https://openrouter.ai/api/v1",
+                model = "openai/gpt-4.5-preview",
+                max_tokens = 16384,
+                disable_tools = true,
+              },
+              ["grok-2-1212"] = {
+                __inherited_from = "openai",
+                api_key_name = "OPENROUTER_API_KEY",
+                endpoint = "https://openrouter.ai/api/v1",
+                model = "openai/gpt-4.5-preview",
+                max_tokens = 131072,
+                disable_tools = true,
+              },
             },
-            auto_suggestions_provider = "copilot",
+            auto_suggestions_provider = "gemini-2.0-flash",
           },
         },
       },
