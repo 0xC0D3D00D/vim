@@ -139,7 +139,15 @@ return {
     }, vim.api.nvim_create_namespace "neotest")
     require("neotest").setup({
       adapters = {
-        require("neotest-golang"), -- Registration
+        require("neotest-golang")({
+          go_test_args = { "-tags=integration" },
+          go_list_args = { "-tags=integration" },
+          dap_go_opts = {
+            delve = {
+              buildFlags = { "-tags=integration" },
+            }
+          }
+        }),
       },
     })
   end,
